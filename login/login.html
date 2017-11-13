@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav droptobottom">
+                <li class="nav-text">
+                    <i class="fa fa-twitter fa-2x fa-fw nav-icon" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <span class="nav-text">Chirper</span>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="../sign-in/sign-up-page.html" class="nav-text">
+                        <span class="glyphicon glyphicon-log-in"></span> Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-lg-6 col-lg-offset-3">
+            <form id="login-form" hidden>
+                <fieldset>
+                    <legend>Welcome Back!</legend>
+                    <div class="form-group">
+                        <label for="exampleInputUsername1">Username</label>
+                        <input type="username" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                </fieldset>
+                <div class="form-check"></div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
