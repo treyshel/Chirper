@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Chirp Chirp!</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav droptobottom">
+                <li class="active">
+                    <i class="fa fa-twitter fa-2x fa-fw nav-icon" aria-hidden="true"></i>
+                </li>
+                <li>
+                    <span class="nav-text">Home</span>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="search-a" class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button id="search-b" class="btn btn-secondary my-2 my-sm-0" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">
+    </div>
+    <nav id="bottom-navbar" class="navbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li id="tweets">
+                    <table>
+                        <tr>
+                            <th>Tweets</th>
+                            <th>Following</th>
+                            <th>Followers</th>
+                            <th>Likes</th>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <span id="user-logo" class="fa-stack fa-lg fa-6x">
+                    <i class="fa fa-circle-o fa-stack-2x"></i>
+                    <i class="fa fa-user fa-stack-1x"></i>
+                </span>
+                <div id="personalinfo">
+                    <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+                </div>
+            </div>
+            <div class="col-lg-6 chirps">
+                <form id="chirpform">
+                    <div class="form-group">
+                        <label for="exampleTextarea">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            Add Chirp
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </label>
+                        <textarea class="form-control" id="type-chirp" rows="3"></textarea>
+                    </div>
+                    <button type="submit" id="post-chirp">Chirp Chirp</button>
+                </form>
+                <span class="bold-eighteen">Chirps</span>&emsp;
+                <span class="bold-eighteen" data-toggle="modal" data-target="#myModal">Chirps & Replies</span>&emsp;
+                <span class="bold-eighteen" data-toggle="modal" data-target="#myModal">Media</span>
+                <hr />
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title bold-eighteen">Sign up for Chirper</h4>
+                            </div>
+                            <div class="modal-body">
+                                <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+                                <p class="bold-eighteen">Not on Chirper? Sign up, tune into the things you care about, and get updates as they happen.
+                                </p>
+                                <button type="button" onclick="window.location = 'sign-in-page.html'" class="sign-up-button">Sign up</button>
+                            </div>
+                            <div class="modal-footer">
+                                <center>
+                                    <p class="grey1">Have an account?</p>
+                                    <a href="https://twitter.com/login">Log in >></a>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="chirps">
+                    <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row" id="newtotwitter">
+                    <center>
+                        <h2 id="new">New to Chirper?</h2>
+                        <p class="grey2">&nbsp;&nbsp;Sign up now to get your own &nbsp;&nbsp;personalized timeline!</p>
+                    </center>
+                    <center>
+                        <a type="button" href="chirper-frontend/index.html" class="btn sign-up-button">Sign up</a>
+                    </center>
+                </div>
+                <div>
+                    <div class="row" id="youmayalsolike">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="main">Hello World!</div>
+    <div id="user">...</div>
+    <form>
+        <input type="text" placeholder="Full name">
+        <input type="submit" value="go">
+    </form>
+    <div id="chirps"></div> -->
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
