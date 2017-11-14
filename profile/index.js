@@ -37,7 +37,7 @@ function authorInfo() {
             ' ' +
             PAGE_DATA.chirper.website +
             '</a>',
-        '<p class="grey2"><i class="fa fa-calendar" aria-hidden="true"></i>Joined' +
+        '<p class="grey2"><i class="fa fa-calendar" aria-hidden="true"></i> Joined' +
             ' ' +
             Month(PAGE_DATA.chirper.joined.month) +
             ' ' +
@@ -67,12 +67,14 @@ function getOneTweet(x) {
 }
 
 function showAllChirps() {
+    $('#chirps').hide(350);
     var html = PAGE_DATA.chirps
         .map(function(x) {
             return getOneTweet(x);
         })
         .join('');
     $('#chirps').html(html);
+    $('#chirps').show(350);
 }
 
 function postChirp() {
@@ -94,10 +96,19 @@ function postChirp() {
             },
             message: chirp
         };
-        PAGE_DATA.chirps.splice(0, 0, newChirp);
+        $.post(
+            'https://bcca-chirper.herokuapp.com/api/chirp/',
+            JSON.stringify({
+                key: window.localStorage.getItem('key'),
+                message: newChirp.message
+            })
+        ).then(function() {
+            onLoad();
+            // PAGE_DATA.chirps.splice(0, 0, newChirp);
+            // showAllChirps();
+        });
     }
-    $('#type-chirp').val();
-    showAllChirps();
+    $('#type-chirp').val('');
 }
 
 // **********Draw/Main Functions******************
@@ -105,17 +116,23 @@ function drawInfo() {
     $('#personalinfo').html(authorInfo());
 }
 
-function drawChirps() {
-    $('#chirps').html(postChirp());
-}
+// function drawChirps() {
+//     $('#chirps').html();
+// }
+
+// ********make chirps post*************
+
+$('#chirpform').on('submit', function(event) {
+    event.preventDefault();
+    postChirp();
+});
 
 function main(username) {
     $.get('https://bcca-chirper.herokuapp.com/api/' + username + '/')
         .then(function handleFeedResponse(response) {
             PAGE_DATA = response;
-            console.log(PAGE_DATA);
             drawInfo();
-            drawChirps();
+            showAllChirps();
         })
         .catch(function handleFeedReason(reason) {
             console.log('Failure:', reason);
@@ -123,13 +140,15 @@ function main(username) {
 }
 
 // **********on load do this******************
-$(function() {
+function onLoad() {
     var user = new URLSearchParams(document.location.search.substring(1)).get(
         'user'
     );
     if (user) {
         main(user);
     } else {
-        main('treyshel');
+        main('');
     }
-});
+}
+
+$(onLoad);
