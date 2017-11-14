@@ -1,6 +1,6 @@
 function login() {
     $.post(
-        'https://bcca-chirper.herokuapp.com/api/signup/',
+        'https://bcca-chirper.herokuapp.com/api/login/',
         JSON.stringify({
             username: $('#username-input').val(),
             password: $('#password-input').val()
@@ -14,7 +14,7 @@ function login() {
     });
 }
 
-$('login-form').on('submit', function(event) {
+$('#login-form').on('submit', function(event) {
     event.preventDefault();
     login();
 });
