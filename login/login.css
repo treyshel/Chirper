@@ -19,4 +19,17 @@
 
 .nav-text {
     color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-icon {
+    color: white;
+    padding-top: 11px;
+}
+
+.glyphicon-log-in,
+a {
+    color: white;
 }
