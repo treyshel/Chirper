@@ -3,6 +3,10 @@ body {
     background-color: #e6ecf0;
 }
 
+.container {
+    margin-left: 8%;
+}
+
 .fa-6x {
     font-size: 6em;
     color: white;
@@ -37,7 +41,7 @@ i {
     padding-bottom: 5%;
 }
 
-#youmayalsolike {
+#emoji-codes {
     background-color: white;
     margin-top: 8%;
     margin-left: 2%;
@@ -53,6 +57,10 @@ i {
     color: #14171a;
     font-size: 18px;
     font-weight: bold;
+}
+
+.chirps-header {
+    margin-left: -50%;
 }
 
 #personalinfo {
@@ -198,10 +206,11 @@ span:hover {
 
 .droptobottom {
     margin-top: 1%;
+    margin-left: 3%;
 }
 
 #tweets {
-    margin-left: 32em;
+    margin-left: 28em;
 }
 
 th,
