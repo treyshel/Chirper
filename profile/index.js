@@ -116,10 +116,6 @@ function drawInfo() {
     $('#personalinfo').html(authorInfo());
 }
 
-// function drawChirps() {
-//     $('#chirps').html();
-// }
-
 // ********make chirps post*************
 
 $('#chirpform').on('submit', function(event) {
