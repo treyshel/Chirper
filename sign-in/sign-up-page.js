@@ -1,3 +1,4 @@
+// *************sig up**************************
 function signup() {
     $.post(
         'https://bcca-chirper.herokuapp.com/api/signup/',
