@@ -1,222 +1,228 @@
 body {
-    text-align: center;
-    background-color: #e6ecf0;
+  text-align: center;
+  background-color: #e6ecf0;
 }
 
 .container {
-    margin-left: 8%;
+  margin-left: 8%;
 }
 
 .fa-6x {
-    font-size: 6em;
-    color: white;
-    background-color: white;
-    border-radius: 50%;
+  font-size: 6em;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
 }
 
 #user-logo {
-    margin-top: -140px;
+  margin-top: -140px;
 }
 
 a,
 i {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 .chirps {
-    background-color: white;
-    margin-top: 2%;
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 15%;
 }
 
 #newtotwitter {
-    background-color: white;
-    margin-top: 9%;
-    margin-left: 2%;
-    color: #14171a;
-    font-size: 21px;
-    font-weight: bold;
-    padding-top: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+  background-color: white;
+  margin-top: 9%;
+  margin-left: 5%;
+  color: #14171a;
+  font-size: 21px;
+  font-weight: bold;
+  padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
 #emoji-codes {
-    background-color: white;
-    margin-top: 8%;
-    margin-left: 2%;
-    color: #14171a;
-    font-size: 18px;
-    font-weight: bold;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-bottom: 4%;
+  background-color: white;
+  margin-top: 8%;
+  margin-left: 2%;
+  color: #14171a;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-bottom: 4%;
 }
 
 .bold-eighteen {
-    color: #14171a;
-    font-size: 18px;
-    font-weight: bold;
+  color: #14171a;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .chirps-header {
-    margin-left: -50%;
+  margin-left: -50%;
 }
 
 #personalinfo {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 .grey1 {
-    font-size: 14px;
-    color: gray;
+  font-size: 14px;
+  color: gray;
 }
 
 .grey2 {
-    font-size: 14px;
-    color: gray;
-    margin-top: 4%;
+  font-size: 14px;
+  color: gray;
+  margin-top: 4%;
 }
 
 .text-fourteen {
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
 }
 
 #author-name {
-    font-size: 21px;
-    font: bolder;
-    /* margin-top: -1%; */
-    padding-top: 3px;
-    font-weight: bold;
+  font-size: 21px;
+  font: bolder;
+  /* margin-top: -1%; */
+  padding-top: 3px;
+  font-weight: bold;
 }
 
 .ProfileAvatar-image {
-    height: 210px;
-    width: 210px;
-    border-radius: 50%;
-    margin-left: -7%;
-    position: relative;
-    margin-top: -92%;
-    border-width: 6px;
-    border-color: white;
-    border-style: solid;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  margin-left: -7%;
+  position: relative;
+  margin-top: -92%;
+  border-width: 6px;
+  border-color: white;
+  border-style: solid;
 }
 
 .sign-up-button {
-    background-color: #1da1f2;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 5%;
-    position: relative;
-    text-align: center;
-    border-radius: 25px;
-    border: none;
-    height: 50px;
+  background-color: #1da1f2;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 5%;
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
+  border: none;
+  height: 50px;
 }
 
 #new {
-    font-size: 21px;
-    font-weight: bold;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .small-pic {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  float: left;
 }
 
 #post-chirp {
-    background-color: #1da1f2;
-    border: none;
-    border-radius: 8px;
-    float: right;
-    font-size: 14px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    color: white;
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 8px;
+  float: right;
+  font-size: 14px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
 }
 
 span:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color: #1da1f2;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1da1f2;
 }
 
 .modal-title,
 .modal-body {
-    text-align: center;
+  text-align: center;
 }
 
 #search-a {
-    margin-right: 0;
-    border-radius: 17px 0 0 17px;
-    box-shadow: none;
+  margin-right: 0;
+  border-radius: 17px 0 0 17px;
+  box-shadow: none;
 }
 
 #search-b {
-    margin-left: -10px;
-    margin-right: 40px;
-    background-color: white;
-    border: 1px solid #ccc;
-    color: #555;
-    border-radius: 0 17px 17px 0;
+  margin-left: -10px;
+  margin-right: 40px;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #555;
+  border-radius: 0 17px 17px 0;
 }
 
 .navbar {
-    background: white;
-    min-height: 50px;
-    margin-bottom: -5px;
-    box-shadow: 5px 5px 5px #888888;
+  background: white;
+  min-height: 50px;
+  margin-bottom: -5px;
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .nav-icon {
-    font-size: 1.6em;
-    color: #1da1f2;
+  font-size: 1.6em;
+  color: #1da1f2;
 }
 
 .nav-text {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 #bottom-navbar {
-    margin-top: -2%;
+  margin-top: -2%;
 }
 
 #search-a,
 #search-b {
-    margin-top: 2.5%;
-    background-color: #e8e8e8;
+  margin-top: 2.5%;
+  background-color: #e8e8e8;
 }
 
 .page-header {
-    background-color: #1da1f2;
-    box-shadow: 5px 5px 5px #888888;
-    min-height: 180px;
-    width: 100%;
-    height: 10%;
-    margin-top: 0;
+  background-color: #1da1f2;
+  box-shadow: 5px 5px 5px #888888;
+  min-height: 180px;
+  width: 100%;
+  height: 10%;
+  margin-top: 0;
 }
 
 .droptobottom {
-    margin-top: 1%;
-    margin-left: 3%;
+  margin-top: 1%;
+  margin-left: 3%;
 }
 
 #tweets {
-    margin-left: 28em;
+  margin-left: 28em;
 }
 
 th,
 td {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.user-info {
+  position: absolute;
+  margin-top: 4%;
 }
